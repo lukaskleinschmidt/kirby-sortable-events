@@ -5,13 +5,13 @@
     console.log('Perhaps initiate a calender here.');
   }
 
-  $.fn._events = function() {
+  $.fn.events = function() {
     return this.each(function() {
-      if ($(this).data('_events')) {
+      if ($(this).data('events')) {
         return $(this);
       } else {
         var events = new Events(this);
-        $(this).data('_events', events);
+        $(this).data('events', events);
         return $(this);
       }
     });
