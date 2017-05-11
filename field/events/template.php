@@ -16,7 +16,7 @@
 <?php endif; ?>
 
 <div class="sortable__navigation">
-  <?php // echo $field->action('copy'); ?>
-  <?php // echo $field->action('paste'); ?>
+  <?= $field->action('copy'); ?>
+  <?= $field->action('paste'); ?>
   <?= $field->action('add'); ?>
 </div>
